@@ -1,0 +1,22 @@
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking! A good question is a contribution. Search existing Q&A first — someone may have hit this already.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do, and what's unclear or not working?
+      placeholder: "How does HAL decide a VETO vs a FLAG?"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (what you tried)
+      description: Commands, versions, links, error output — receipts help us help you.
+    validations:
+      required: false

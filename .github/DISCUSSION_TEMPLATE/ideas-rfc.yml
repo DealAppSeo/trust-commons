@@ -1,0 +1,27 @@
+title: "[RFC] "
+labels: ["rfc", "idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposing a design, a change, or a critique. Big protocol changes start here as an RFC before any code. Refutations welcome — poking holes is the point.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The proposal / concern
+      description: What are you proposing or challenging, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / reasoning
+      description: Data, sources, prior art, a failure case. A claim without receipts is an opinion.
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
