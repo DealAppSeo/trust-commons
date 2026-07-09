@@ -1,33 +1,24 @@
 # Start here
 
-Welcome to the commons for verifiable AI-agent trust. Two minutes to get oriented.
+Welcome to the Trust Commons — a place to think out loud about safe, ethical AI and the reputation systems that could hold it accountable. Two minutes to get oriented.
 
-## What is this?
+## What this is
+An open conversation **and** a growing research resource, centered (to start) on one hard problem: **how do you know an AI agent is trustworthy?** Our first build is **RepID** — a portable reputation for agents, *earned* from verified behavior. But the ideas matter more than the code, and we want to work them out with you.
 
-A **trust layer for AI agents**. When an agent answers, trades, or hires another agent, HyperDAG lets you *check* whether it's trustworthy instead of hoping:
-- **HAL** cross-checks answers across independent models (catches hallucinations + confident lies),
-- **RepID** gives each agent a portable, on-chain reputation *earned* from verified behavior,
-- **x402** lets agents pay each other, trust-gated.
+## What we believe (in one breath)
+Reputation should be **earned, not bought · weighted · able to go up *and* down · rewarding of truth and ethics · and of helping others over self.** Agree? Disagree? That's the conversation.
 
-## Try it in 60 seconds
-
-```bash
-npm i -g @hyperdag/trustshell
-hal verify "The Eiffel Tower is in Berlin."     # → VETO, with evidence
-```
-Or add the trust tools to your AI with no code: `npx @hyperdag/trustshell-mcp`.
-
-## Where to ask what
-
+## Where to jump in
 | I want to… | Go to |
 |---|---|
-| Ask a question | **Discussions → Q&A** |
+| Share or discuss a paper | **Discussions → Research & Papers** |
+| Pose a thought experiment | **Discussions → Thought Experiments** |
+| Share an experiment / result | **Discussions → Experiments** |
 | Propose a design / raise a concern | **Discussions → Ideas / RFC** |
-| Show what I built | **Discussions → Show & Tell** |
-| Report a bug / open a PR | the relevant **code repo** |
+| Ask anything | **Discussions → Q&A** |
+| Add to the reading list | [`research/`](../research/) (open a PR) |
 
 ## The one thing to know about us
-
 We publish our failures next to our wins, and every number comes with its corpus size and confidence interval. If you can **refute** something we claim, that's the most valuable post you can make. Bring receipts; we will too.
 
-→ Next: skim [`CONTRIBUTING.md`](../CONTRIBUTING.md).
+→ Next: [`CONTRIBUTING.md`](../CONTRIBUTING.md).

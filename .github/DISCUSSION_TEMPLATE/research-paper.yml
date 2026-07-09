@@ -1,0 +1,28 @@
+title: "[Paper] "
+labels: ["research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sharing a paper, preprint, or piece of prior art. Give a real, checkable citation — primary sources preferred. Adjacent fields (economics, game theory, security, social science) welcome.
+  - type: input
+    id: citation
+    attributes:
+      label: Citation
+      description: Title · Authors · Year · link (DOI / arXiv / URL)
+      placeholder: "Title — Authors (Year). https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters here
+      description: How does it inform trust, reputation, verification, honesty, or incentives for AI?
+    validations:
+      required: true
+  - type: textarea
+    id: discussion
+    attributes:
+      label: What you'd like to discuss (or where you disagree)
+    validations:
+      required: false

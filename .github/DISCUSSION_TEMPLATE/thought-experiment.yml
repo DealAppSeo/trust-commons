@@ -1,0 +1,27 @@
+title: "[Thought experiment] "
+labels: ["thought-experiment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A "what breaks if…", an incentive trap, an adversarial framing. No code or data required — just careful thinking. Kind, rigorous debate welcome.
+  - type: textarea
+    id: setup
+    attributes:
+      label: The setup
+      description: The scenario or question. What are we imagining?
+    validations:
+      required: true
+  - type: textarea
+    id: tension
+    attributes:
+      label: The tension it stresses
+      description: Which assumption or value does it test? (e.g. earned-not-bought · weighted · goes up-and-down · rewards truth · helping-others-over-self)
+    validations:
+      required: false
+  - type: textarea
+    id: take
+    attributes:
+      label: Your own take (optional)
+    validations:
+      required: false

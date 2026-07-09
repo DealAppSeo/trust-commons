@@ -1,42 +1,52 @@
-# Vouch — the commons for verifiable AI-agent trust
+# The Trust Commons
 
-> *Working title — this is the community hub for the HyperDAG trust ecosystem. Private until launch.*
+*A space for open conversation and friendly debate about how to build safe, ethical AI — and the reputation systems that could hold it accountable.*
 
-**The problem:** when an AI agent does something — answers a question, makes a trade, buys a service from another agent — you have no way to know if it's trustworthy. You just hope. **We turn that hope into evidence you can check.**
+> Community hub for the HyperDAG trust ecosystem. Private while we set up the first room; opening soon.
 
-This repo is the **town square**: RFCs, Q&A, ideas, and the ongoing conversation for developers, researchers, founders, economists, and anyone building — or relying on — accountable AI agents.
+We think the hardest problem in front of AI isn't capability — it's **trust**. When an autonomous agent answers a question, makes a trade, or hires another agent, how does anyone *know* it's trustworthy? Today you just hope. We think you should be able to **check** — and that the mechanisms for checking are worth designing in the open, together.
 
-## The trust layer, in one breath
+This is a commons, not a pulpit. We're building something specific, but the questions underneath are bigger than any one project, and we'd rather think them through with you.
 
-Three layers, one wrapper. *"ERC-8004 is the résumé, x402 is the paycheck — we're the performance review."*
+## Where we're starting: an Agentic Trust Layer
 
-- **HAL** — before an agent's answer is trusted, it's cross-checked by several *independent* models to catch hallucinations and flag confident lies. *(verification)*
-- **RepID** — every agent earns a portable, on-chain reputation from *verified behavior* — earned, never bought. *(reputation)*
-- **x402** — agents pay each other, and payment is trust-gated. *(money)*
+Our first concrete build is a portable **RepID — Reputation Identification** for AI agents and the LLMs behind them: a reputation you can carry, verify, and trust because it's *earned from behavior*, not asserted. It's grounded in real, running code (see the ecosystem links below) — but the code is downstream of the ideas we want to debate here.
 
-Trust delivered as **evidence, not a claim.**
+## What we believe about reputation — our starting position, not scripture
 
-## Honest status (testnet — Base Sepolia)
+These are the values we're building RepID on. Argue with them. Tell us where they break:
 
-We hold ourselves to the standard we sell: measured, receipted, and honest about limits.
+1. **It must be earned, never bought.** Reputation comes from verified behavior — not from how much you stake, spend, or promote yourself. You cannot purchase your way to trusted.
+2. **It's weighted.** Not every signal counts the same. The quality of the verification, what's at stake, and the standing of whoever's vouching all shape the weight.
+3. **It goes up *and* down.** Trust is earned upward for good work and lost for harm. Accountability runs both directions — a reputation you can only gain is just a badge.
+4. **It rewards truth and ethics.** Promoting what's true and acting ethically raises it; deception — especially *defended* deception — lowers it.
+5. **It rewards helping others and the ecosystem over self.** Behavior that lifts others and strengthens the commons is valued above pure self-interest.
 
-- **Live:** SDK, MCP server, CLI, proof-verifier (all on npm); the reputation engine's public API; 12 agents minted on-chain; human email/password onboarding + paper-trading contests.
-- **Measured:** in a **337-item provenanced eval** (FEVER + HaluEval + TruthfulQA + our canary), the real cross-LLM quorum scores **~0.80 F1 / 0.95 recall / 0.90 AUC, well-calibrated** — with the honest caveats that (a) the quorum's edge is *recall + independence*, not raw accuracy over a single strong model, and (b) model "independence" is *partial* (some hosts serve identical weights). Independent replication is in progress before we headline any number.
-- **Shadow:** the deception-detection layer measures but does not yet punish. Deliberately.
-- **Not yet:** mainnet, real economic stakes. We won't claim what we haven't shipped.
+If those resonate — or make you want to push back — that's exactly the conversation this place is for.
 
-## Where to go
+## Bring your best thinking
 
-- **Discussions** (here) — ask, propose, debate. Categories: Announcements · Q&A · Ideas / RFC · Show & Tell · Polls · General.
-- **Code:** [`repid-engine`](https://github.com/DealAppSeo/repid-engine) · [`hyperdag-protocol`](https://github.com/DealAppSeo/hyperdag-protocol) · [`trustshell`](https://github.com/DealAppSeo/trustshell)
-- **Install:** `npm i @hyperdag/trustshell` (SDK) · `npx @hyperdag/trustshell-mcp` (AI, no code) · `npm i -g @hyperdag/trustshell` → `hal verify` (CLI)
-- **Site:** [trustshell.dev](https://trustshell.dev)
+We want this to become a genuinely useful **resource** for anyone working on trust and AI:
 
-## How to take part
+- 📄 **Sourced research** — papers, preprints, and prior art on reputation, mechanism design, alignment, hallucination detection, game theory. → see [`research/`](research/), a growing community-curated reading list.
+- 🧪 **Thought experiments** — "what breaks if…", adversarial framings, edge cases, incentive traps.
+- 🔬 **Experiments** — run something, share what you found. *Especially* if it refutes us.
+- ❓ **Questions & pushback** — nothing is too basic or too skeptical.
 
-New here? Read [`docs/START_HERE.md`](docs/START_HERE.md). Want to contribute? See [`CONTRIBUTING.md`](CONTRIBUTING.md). We hold one another to [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+## The house rules (short)
 
-Our ethos is the product's ethos: **evidence over claims, honesty over hype, receipts on every number, and reward for truth-seeking.**
+The way we build *is* the thesis, so we hold the commons to it too:
+- **Critique ideas hard; treat people kindly.**
+- **Bring receipts** — a claim without a source is an opinion.
+- **We publish our failures next to our wins**, and every number carries its corpus size and confidence interval.
+- **The best contribution is the one that overturns a wrong assumption — ours included.**
+
+New here? Start at [`docs/START_HERE.md`](docs/START_HERE.md). To take part, see [`CONTRIBUTING.md`](CONTRIBUTING.md); we hold one another to the [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
+## The ecosystem this grows from
+
+Grounded in working code — testnet today, honest about limits:
+[`repid-engine`](https://github.com/DealAppSeo/repid-engine) · [`hyperdag-protocol`](https://github.com/DealAppSeo/hyperdag-protocol) · [`trustshell`](https://github.com/DealAppSeo/trustshell) · [trustshell.dev](https://trustshell.dev)
 
 ---
-*Honest weights and measures. — Micah 6:8 · Proverbs 11:1*
+*Building trust in the open. "Honest weights and measures." — Micah 6:8 · Proverbs 11:1*
